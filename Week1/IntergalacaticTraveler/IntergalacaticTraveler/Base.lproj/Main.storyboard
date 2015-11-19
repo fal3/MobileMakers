@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D4E-Gp-gOc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1WV-8Y-54t">
+            <objects>
+                <navigationController id="1Zs-P0-Y3g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eoS-XI-V3E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F57-Xa-14n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="303"/>
+        </scene>
+        <!--Intergalctic Travel inc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8m-pl-lb1">
+                                <rect key="frame" x="16" y="269" width="106" height="30"/>
+                                <state key="normal" title="Visit Red Dwarf">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yw4-tm-bWU" kind="push" identifier="redDwarfSegue" id="VBm-gF-5eK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y96-hR-Moc">
+                                <rect key="frame" x="208" y="269" width="96" height="30"/>
+                                <state key="normal" title="Visit Blue Star">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yw4-tm-bWU" kind="push" identifier="blueStarSegue" id="k9M-JP-wpP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y96-hR-Moc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5SQ-uZ-BSD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Intergalctic Travel inc" id="1fs-wr-8YF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="308"/>
+        </scene>
+        <!--Travel View Controller-->
+        <scene sceneID="cDQ-Vn-fE5">
+            <objects>
+                <viewController id="Yw4-tm-bWU" customClass="TravelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l9k-OV-spR"/>
+                        <viewControllerLayoutGuide type="bottom" id="B2Y-aS-O2j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UwQ-bC-w8m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w17-5v-AuC">
+                                <rect key="frame" x="16" y="72" width="288" height="488"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w17-5v-AuC" firstAttribute="top" secondItem="l9k-OV-spR" secondAttribute="bottom" constant="8" id="3Er-fm-nDb"/>
+                            <constraint firstItem="B2Y-aS-O2j" firstAttribute="top" secondItem="w17-5v-AuC" secondAttribute="bottom" constant="8" id="VdQ-vA-pKR"/>
+                            <constraint firstItem="w17-5v-AuC" firstAttribute="trailing" secondItem="UwQ-bC-w8m" secondAttribute="trailingMargin" id="tLK-jq-eaM"/>
+                            <constraint firstItem="w17-5v-AuC" firstAttribute="leading" secondItem="UwQ-bC-w8m" secondAttribute="leadingMargin" id="vYr-5E-AUv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EiG-L3-o1F"/>
+                    <connections>
+                        <outlet property="starImageView" destination="w17-5v-AuC" id="Utv-R7-BF6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7f-dL-U8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="308"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cyj-jp-W4j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D4E-Gp-gOc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tKV-JI-bPF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pa7-VK-1Cv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtC-bF-Ces" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="308"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="VBm-gF-5eK"/>
+    </inferredMetricsTieBreakers>
+</document>
